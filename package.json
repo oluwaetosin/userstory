@@ -9,8 +9,10 @@
   "author": "Tosin Omotayo",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
+    "mongoose": "^4.5.0",
     "morgan": "^1.7.0"
   }
 }

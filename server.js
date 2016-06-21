@@ -2,7 +2,15 @@ var express    = require('express');
 var morgan     = require('morgan');
 var bodyParser = require('body-parser');
 var config     = require('./config');
+var mongoose   = require('mongoose');
 
+mongoose.connect(config.database,function(err){
+    if(err){
+        console.log(e);
+    }else{
+        console.log("connected");
+    }
+});
 var app = express();
     app.use(bodyParser.urlencoded({extended:true}));
     app.use(bodyParser.json());
