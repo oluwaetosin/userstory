@@ -20,8 +20,6 @@ module.exports = function(app,express){
           }
           res.json({message: 'User has been created'});
       });
-          
-      
    });
    
    return api;
